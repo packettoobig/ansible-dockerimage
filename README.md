@@ -9,7 +9,7 @@ We just install ansible and some python modules in addition to [the changes in t
 
 ## How to use
 You will of course need docker to be installed. Please refer to [https://get.docker.com/](https://get.docker.com/) for information on this subject.<br/>
-Once that's done, you can for example use the following command:
+Once that's done, you can use something like this:
 
     docker run -v $HOME/.ssh/id_rsa:/root/.ssh/id_rsa -v $HOME/git/myansible:/root/ansible/ -it pilbbq/ansible /bin/bash
 It will run the container interactively with your ssh private key and your git repo mounted.<br/>
