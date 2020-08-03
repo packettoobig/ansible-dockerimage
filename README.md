@@ -10,8 +10,14 @@ We just `pip3 install ansible` in addition to [the changes in the original image
 We also install some basic python modules.
 
 ## How to use
-TODO<br/>
 You will of course need docker to be installed. Please refer to [https://get.docker.com/](https://get.docker.com/) for information on this subject.
+Once that's done, you can for example use the following command:
+	docker run -v $HOME/.ssh/id_rsa:/root/.ssh/id_rsa -v $HOME/git/myansible:/root/ansible/ -it pilbbq/ansible /bin/bash
+It will run the container interactively with your ssh private key and your git repo mounted.
+Once you are intaracting with the container, you will probably want to :
+	eval $(ssh-agent -s)
+	ssh-add
+	ansible-playbook myplaybook.yml -i myinventory -u myuser
 
 ## Misc
 Image is built everytime there is a commit to this repo.<br/>
