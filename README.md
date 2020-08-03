@@ -8,12 +8,12 @@
 We just install ansible and some python modules in addition to [the changes in the original image](https://github.com/pilbbq/debian-custom-dockerimage).
 
 ## How to use
-You will of course need docker to be installed. Please refer to [https://get.docker.com/](https://get.docker.com/) for information on this subject.
+You will of course need docker to be installed. Please refer to [https://get.docker.com/](https://get.docker.com/) for information on this subject.<br/>
 Once that's done, you can for example use the following command:
 
     docker run -v $HOME/.ssh/id_rsa:/root/.ssh/id_rsa -v $HOME/git/myansible:/root/ansible/ -it pilbbq/ansible /bin/bash
-It will run the container interactively with your ssh private key and your git repo mounted.
-Once you are intaracting with the container, you will probably want to :
+It will run the container interactively with your ssh private key and your git repo mounted.<br/>
+Once you are interacting with the container, you will probably want to :
 
     eval $(ssh-agent -s)
     ssh-add
