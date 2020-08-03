@@ -1,0 +1,4 @@
+paramiko
+netaddress
+dnspython
+ansible==2.9.9
