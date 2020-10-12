@@ -3,7 +3,7 @@
 #
 # VARIABLES
 #
-randomstring=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 8 | head -n 1)
+randomstring=$(cat /dev/urandom | base64 | tr -dc 'a-zA-Z0-9' | fold -w 8 | head -n 1)
 sleeptime=0
 mntsrc1="$HOME/.ssh/id_rsa"
 mntdst1="/root/.ssh/id_rsa"
