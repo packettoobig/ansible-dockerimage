@@ -2,7 +2,7 @@
 
 ## Useful Links
 **Image Location :** [https://hub.docker.com/r/pilbbq/ansible](https://hub.docker.com/r/pilbbq/ansible)<br/>
-**Repo Location :** [https://github.com/pilbbq/ansible-dockerimage](https://github.com/pilbbq/ansible-dockerimage)<br/>
+**Repo Location :** [https://github.com/packettoobig/ansible-dockerimage](https://github.com/packettoobig/ansible-dockerimage)<br/>
 
 ## Diff with original debian
 We just install ansible and some python modules in addition to [the changes in the original image](https://github.com/pilbbq/debian-custom-dockerimage).
