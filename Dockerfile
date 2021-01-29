@@ -1,5 +1,5 @@
 # BEGIN
-FROM pilbbq/debian
+FROM packettoobig/debian
 WORKDIR /root
 COPY requirements.txt ./
 RUN apt-get -qq update && \
