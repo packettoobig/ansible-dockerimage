@@ -40,7 +40,7 @@ echo "Running a new $container container version $containerversion interactively
 echo "####################################################################################################"
 sleep $sleeptime
 echo "Lauching $containerhostname"
-sudo docker run --name $containerfullname -h $containerhostname \
+sudo docker run --rm --name $containerfullname -h $containerhostname \
 	-v $local_ssh_authsock:$mntbaseauthsock \
 	-e SSH_AUTH_SOCK=$authsockmnt \
 	-v $mntsrc1:$mntdst1:$mntopt1 \
