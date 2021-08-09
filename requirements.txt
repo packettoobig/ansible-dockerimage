@@ -1,4 +1,5 @@
 paramiko
 netaddress
+netaddr
 dnspython
 ansible==2.*
